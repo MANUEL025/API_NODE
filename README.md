@@ -55,7 +55,7 @@ URL: /auth/register
 
 Método: POST
 
-# Body: {
+ Body: {
 
   "nombre": "Juan Perez",
   
@@ -69,24 +69,24 @@ Método: POST
 }
 
 
-#############
+
 2. Inicio de sesión
 
 URL: /auth/login
 Método: POST
-# Body:
+ Body:
 {
   "email": "juan@example.com",
   "password": "123456"
 }
 
-##########
+
 
 # Usuarios
 3. Obtener todos los usuarios
 
 URL: /usuarios
-# Método: GET
+ Método: GET
 Headers:
 {
   "x-auth-token": "<TOKEN_JWT>"
@@ -97,12 +97,12 @@ Headers:
 
 URL: /usuarios/:id
 Método: PUT
-# Headers:
+ Headers:
 {
   "x-auth-token": "<TOKEN_JWT>"
 }
 
-# body:
+ body:
 {
   "nombre": "Nuevo Nombre",
   "email": "nuevoemail@example.com",
@@ -116,7 +116,7 @@ Método: PUT
 
 URL: /productos
 Método: GET
-# Headers:
+ Headers:
 {
   "x-auth-token": "<TOKEN_JWT>"
 }
@@ -125,12 +125,12 @@ Método: GET
 
 URL: /productos
 Método: POST
-# Headers:
+ Headers:
 {
   "x-auth-token": "<TOKEN_JWT>"
 }
 
-# body:
+ body:
 {
   "nombre": "Producto 1",
   "descripcion": "Descripción del producto 1",
@@ -144,11 +144,11 @@ Método: POST
 
 URL: /productos/:id
 Método: PUT
-# Headers:
+ Headers:
 {
   "x-auth-token": "<TOKEN_JWT>"
 }
-# Body:
+ Body:
 {
   "nombre": "Nuevo Producto",
   "descripcion": "Nueva Descripción",
