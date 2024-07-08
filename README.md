@@ -73,10 +73,13 @@ Método: POST
 2. Inicio de sesión
 
 URL: /auth/login
+
 Método: POST
+
  Body:
 {
   "email": "juan@example.com",
+  
   "password": "123456"
 }
 
@@ -86,7 +89,9 @@ Método: POST
 3. Obtener todos los usuarios
 
 URL: /usuarios
+
  Método: GET
+ 
 Headers:
 {
   "x-auth-token": "<TOKEN_JWT>"
@@ -96,7 +101,9 @@ Headers:
 4. Actualizar usuario
 
 URL: /usuarios/:id
+
 Método: PUT
+
  Headers:
 {
   "x-auth-token": "<TOKEN_JWT>"
@@ -105,17 +112,24 @@ Método: PUT
  body:
 {
   "nombre": "Nuevo Nombre",
+  
   "email": "nuevoemail@example.com",
+  
   "password": "nuevopassword",
+  
   "direccion": "Nueva Direccion",
+  
   "rol": "admin"
 }
 
 #  Productos
+
 1. Obtener todos los productos
 
 URL: /productos
+
 Método: GET
+
  Headers:
 {
   "x-auth-token": "<TOKEN_JWT>"
@@ -124,7 +138,9 @@ Método: GET
 2. Crear producto
 
 URL: /productos
+
 Método: POST
+
  Headers:
 {
   "x-auth-token": "<TOKEN_JWT>"
@@ -133,17 +149,24 @@ Método: POST
  body:
 {
   "nombre": "Producto 1",
+  
   "descripcion": "Descripción del producto 1",
+  
   "precio": 100.00,
+  
   "imagen": "imagen.jpg",
+  
   "categoria_id": 1,
+  
   "stock": 10
 }
 
 3. Actualizar producto
 
 URL: /productos/:id
+
 Método: PUT
+
  Headers:
 {
   "x-auth-token": "<TOKEN_JWT>"
@@ -151,11 +174,17 @@ Método: PUT
  Body:
 {
   "nombre": "Nuevo Producto",
+  
   "descripcion": "Nueva Descripción",
+  
   "precio": 200.00,
+  
   "imagen": "nuevaimagen.jpg",
+  
   "categoria_id": 2,
+  
   "stock": 50
+  
 }
 
 
