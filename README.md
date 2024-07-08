@@ -26,23 +26,32 @@ Sigue estos pasos para configurar y ejecutar el proyecto localmente.
 
    ```sh
    git clone https://github.com/MANUEL025/API_NODE.git
+   
    cd API_NODE
 
 2. Instala dependencias:
+   
     npm install
 
-3. Crea un archivo .env en la raíz del proyecto con el siguiente contenido:
+4. Crea un archivo .env en la raíz del proyecto con el siguiente contenido:
+5. 
    DB_NAME=proyecto
+   
    DB_USER=tu_usuario
+   
    DB_PASS=tu_contraseña
+   
    DB_HOST=localhost
+   
    DB_DIALECT=mysql
+   
    JWT_SECRET=tu_jwt_secret
 
-4. inicia el servidor:
+7. inicia el servidor:
+   
    node server.js
 
-5. La API estará disponible en http://localhost:3000
+9. La API estará disponible en http://localhost:3000
 
 
 ## Para realizar pruebas de la Api desde postman por ejemplo las rutas serian:
@@ -77,6 +86,7 @@ URL: /auth/login
 Método: POST
 
  Body:
+ 
 {
   "email": "juan@example.com",
   
@@ -96,6 +106,7 @@ Headers:
 {
   "x-auth-token": "<TOKEN_JWT>"
 }
+
 ## Recuerda cambiar el "TOKEN_JWT" por el token generado en la autenticacion del usuario.
 
 4. Actualizar usuario
@@ -147,6 +158,7 @@ Método: POST
 }
 
  body:
+ 
 {
   "nombre": "Producto 1",
   
@@ -171,7 +183,9 @@ Método: PUT
 {
   "x-auth-token": "<TOKEN_JWT>"
 }
+
  Body:
+ 
 {
   "nombre": "Nuevo Producto",
   
