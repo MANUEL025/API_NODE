@@ -52,14 +52,23 @@ Sigue estos pasos para configurar y ejecutar el proyecto localmente.
 1. Registro de usuarios
 
 URL: /auth/register
+
 Método: POST
+
 # Body: {
+
   "nombre": "Juan Perez",
+  
   "email": "juan@example.com",
+  
   "password": "123456",
+  
   "direccion": "Calle Falsa 123",
+  
   "rol": "user"
 }
+
+
 #############
 2. Inicio de sesión
 
